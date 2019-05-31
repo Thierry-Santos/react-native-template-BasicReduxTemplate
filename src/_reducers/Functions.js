@@ -1,6 +1,6 @@
 import {
     ExampleModel
-} from "../_models";
+} from '../_models';
 
 export const mapStateToProps = state => ({
     // Example

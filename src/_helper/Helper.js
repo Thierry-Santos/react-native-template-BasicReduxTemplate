@@ -1,5 +1,5 @@
-import { Alert, Dimensions, Platform } from "react-native";
-import NetInfo from "@react-native-community/netinfo";
+import { Alert, Dimensions, Platform } from 'react-native';
+import NetInfo from '@react-native-community/netinfo';
 
 export const { height, width } = Dimensions.get('window');
 
@@ -15,6 +15,7 @@ export const PaddingSize = (
 ) => {
 
     let percentage;
+
     if ( key === 1) {
         percentage = parseInt(((width * value) / 100)/2 );
     }
@@ -36,6 +37,7 @@ export const ScreenSize = (
 ) => {
 
     let percentage;
+
     if ( key === 1) {
         percentage = parseInt((width * value) / 100 );
     }
@@ -56,7 +58,8 @@ export const FontScreenSize = (
 ) => {
 
     let percentage;
-    percentage = parseInt(((width * value) / 50) + ((height * value) / 50) );
+
+    percentage = parseInt( ( (((width * value) / 100) + ((height * value) / 100)) / 5) );
 
     return isNaN( percentage ) ? value : percentage;
 };
@@ -71,7 +74,7 @@ export const removeEmoji = (
 
     return new Promise(( resolve, reject ) => {
 
-        if ( typeof value !== "string" ) {
+        if ( typeof value !== 'string' ) {
 
             for ( let i in value ) {
 
@@ -111,18 +114,18 @@ export const validateEmoji = (
 
 export const onlyNumbers = ( string ) => {
 
-    return string.replace(/^\d+$/, "");
+    return string.replace(/^\d+$/, '');
 };
 
 export const actualDate = () => {
 
     let data = new Date();
 
-    return ((data.getFullYear() < 10 ? '0' + data.getFullYear() : data.getFullYear()) + "-" +
-        (data.getMonth() < 10 ? '0' + data.getMonth() : data.getMonth()) + "-" +
-        (data.getDay() < 10 ? '0' + data.getDay() : data.getDay()) + " " +
-        (data.getHours() < 10 ? '0' + data.getHours() : data.getHours()) + ":" +
-        (data.getMinutes() < 10 ? '0' + data.getMinutes() : data.getMinutes()) + ":" +
+    return ((data.getFullYear() < 10 ? '0' + data.getFullYear() : data.getFullYear()) + '-' +
+        (data.getMonth() < 10 ? '0' + data.getMonth() : data.getMonth()) + '-' +
+        (data.getDay() < 10 ? '0' + data.getDay() : data.getDay()) + ' ' +
+        (data.getHours() < 10 ? '0' + data.getHours() : data.getHours()) + ':' +
+        (data.getMinutes() < 10 ? '0' + data.getMinutes() : data.getMinutes()) + ':' +
         (data.getSeconds() < 10 ? '0' + data.getSeconds() : data.getSeconds()));
 };
 

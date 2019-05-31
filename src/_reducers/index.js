@@ -1,7 +1,7 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 import {
     ExampleModel
-} from "../_models";
+} from '../_models';
 
 const Example = (state = ExampleModel, action) => {
     if (action.type === 'CHANGE_EXAMPLE') {

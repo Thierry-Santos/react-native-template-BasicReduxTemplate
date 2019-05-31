@@ -1,4 +1,4 @@
-import { Platform, StatusBar, StyleSheet } from "react-native";
+import { Platform, StatusBar, StyleSheet } from 'react-native';
 import {PaddingSize, ScreenSize, FontScreenSize} from '../_helper/Helper';
 
 const isIOS = Platform.OS === 'ios';
@@ -40,7 +40,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     basicButtonText: {
-        fontSize: FontScreenSize(1, 10),
+        fontSize: FontScreenSize( 10),
         color: '#ffffff',
     },
 
@@ -52,7 +52,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     outsideButtonText: {
-        fontSize: FontScreenSize(1, 10),
+        fontSize: FontScreenSize(10),
         color: '#000000',
     },
 
@@ -65,7 +65,7 @@ export const styles = StyleSheet.create({
         height: ScreenSize(1, 15),
     },
     iconButtonText: {
-        fontSize: FontScreenSize(1, 10),
+        fontSize: FontScreenSize(10),
         color: '#ffffff',
     },
 
@@ -79,7 +79,7 @@ export const styles = StyleSheet.create({
         color: '#000000',
         paddingHorizontal: inputPadW,
         paddingVertical: inputPadH,
-        fontSize: FontScreenSize(1, 10),
+        fontSize: FontScreenSize(10),
     },
     inputOutline: {
         borderColor: '#000000',
@@ -91,7 +91,7 @@ export const styles = StyleSheet.create({
         color: '#000000',
         paddingHorizontal: inputPadW,
         paddingVertical: inputPadH,
-        fontSize: FontScreenSize(1, 10),
+        fontSize: FontScreenSize(10),
     },
 
     inputIcon: {
@@ -105,14 +105,28 @@ export const styles = StyleSheet.create({
         color: '#000000',
         paddingLeft: inputPadH,
         paddingVertical: inputPadW,
-        fontSize: FontScreenSize(1, 10),
+        fontSize: FontScreenSize(10),
     },
     inputIconText: {
         flex: 1,
         color: '#000000',
         paddingHorizontal: inputPadW,
         paddingVertical: inputPadH,
-        fontSize: FontScreenSize(1, 10),
+        fontSize: FontScreenSize(10),
+    },
+
+    titleText: {
+        fontSize: FontScreenSize(15),
+    },
+    subTitleText: {
+        fontWeight: 'bold',
+        fontSize: FontScreenSize(10),
+    },
+    paragraphText: {
+        fontSize: FontScreenSize(10),
+    },
+    simpleText: {
+        fontSize: FontScreenSize(8),
     },
 
     //Padding Vertical
@@ -152,7 +166,7 @@ export const styles = StyleSheet.create({
             width: ScreenSize(1, 1),
             height: ScreenSize(1, 1)
         },
-        shadowColor: "black",
+        shadowColor: 'black',
         shadowOpacity: 0.3,
         elevation: 8,
     }

@@ -1,8 +1,8 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, TextInput} from 'react-native';
 
-import {styles} from "../_assets";
-import {IconsMCI} from "./Icons";
+import {styles} from '../_assets';
+import {IconsMCI} from './Icons';
 
 export const ButtonBasic = props => {
     return (

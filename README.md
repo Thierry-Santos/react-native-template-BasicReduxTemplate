@@ -4,16 +4,29 @@
 
 This template was made to accelerate the React Native mobile development process!
 
+ - This template contains the following dependencies:
+ 
+ `@react-native-community/netinfo`
+ 
+ `react-native-gesture-handler`
+ 
+ `react-native-vector-icons`
+ 
+ `react-navigation`
+ 
+ `react-redux`
+ 
+ `redux`
+
 ## How to install
 
 > Assuming you don't have the essentials for a React Native Project, let's install some things first...
 
 ### what do you need:
 
-Node
-```
-[Download Node](https://nodejs.org/en/download/)
-```
+Node.js
+
+[Download Node.js](https://nodejs.org/en/download/)
 
 React Native CLI
 ```

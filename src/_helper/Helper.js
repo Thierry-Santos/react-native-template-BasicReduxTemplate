@@ -6,7 +6,7 @@ export const { height, width } = Dimensions.get('window');
 /**
  * @param { number } key ( 1 = Width, 2 = Height )
  * @param { number } value ( % size )
- * @returns { number } ( return a int value )
+ * @returns { number } ( returns the % equivalent of the device screen )
  * @constructor
  */
 export const PaddingSize = (
@@ -28,7 +28,7 @@ export const PaddingSize = (
 /**
  * @param { number } key ( 1 = Width, 2 = Height )
  * @param { number } value ( % size )
- * @returns { number } ( return a int value )
+ * @returns { number } ( returns the % equivalent of the device screen )
  * @constructor
  */
 export const ScreenSize = (
@@ -48,9 +48,8 @@ export const ScreenSize = (
 };
 
 /**
- * @param key
- * @param value
- * @returns {*}
+ * @param { number } value
+ * @returns { number } ( returns the % equivalent of the device screen )
  * @constructor
  */
 export const FontScreenSize = (
@@ -127,6 +126,17 @@ export const actualDate = () => {
         (data.getHours() < 10 ? '0' + data.getHours() : data.getHours()) + ':' +
         (data.getMinutes() < 10 ? '0' + data.getMinutes() : data.getMinutes()) + ':' +
         (data.getSeconds() < 10 ? '0' + data.getSeconds() : data.getSeconds()));
+};
+
+export const checkInternetConnection = ( onSuccess, onError ) => {
+
+    NetInfo.getConnectionInfo().then(( info ) => {
+        if ( info.type === "none" || info.type === "unknown" ) {
+            onError();
+        } else {
+            onSuccess();
+        }
+    });
 };
 
 export const PlataformAlert = () => {

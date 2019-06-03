@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar } from 'react-native';
+import {StatusBar, Text, TextInput} from 'react-native';
 import { Provider } from 'react-redux';
 import { createAppContainer, createStackNavigator, createSwitchNavigator } from 'react-navigation';
 
@@ -27,6 +27,15 @@ let Navigation = createAppContainer( DefaultNavigation );
 
 // Render the app container component with the provider around it
 export default class App extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        // Counter for accessibility device changes
+        Text.defaultProps = { ...(Text.defaultProps || {}), allowFontScaling: false };
+        TextInput.defaultProps = { ...(TextInput.defaultProps || {}), allowFontScaling: false };
+    }
+
     render() {
         return (
             <Provider store={store}>

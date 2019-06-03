@@ -1,10 +1,10 @@
 # React Native template basic with Redux
 
+**Made by** *Thiérry Barbosa dos Santos*
+
 `React Native 0.59.8`
 
-This template was made to accelerate the React Native mobile development process!
-
- - This template contains the following dependencies:
+ - This template was made to accelerate the React Native mobile development process and contains the following dependencies:
  
  `@react-native-community/netinfo`
  
@@ -58,5 +58,3 @@ $ react native init "myProject" --template https://github.com/Thierry-Santos/rea
 All the icons that you can use in this app
 
 List of icons: https://oblador.github.io/react-native-vector-icons/
-
-**Made by** *Thiérry Barbosa dos Santos*

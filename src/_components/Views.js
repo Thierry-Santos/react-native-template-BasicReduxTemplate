@@ -61,7 +61,7 @@ export const InputIcon = props => {
         <View style={ styles.inputIcon }>
             <IconsMCI
                 name={ props.name }
-                style={ styles.iconInputText }
+                style={ styles.iconInput }
             />
             <TextInput style={[ styles.inputIconText ]} {...props}>{ props.text }</TextInput>
         </View>

@@ -74,13 +74,13 @@ export const styles = StyleSheet.create({
         borderRadius: 5,
         minWidth: '100%',
     },
-
     inputBasicText: {
         color: '#000000',
         paddingHorizontal: inputPadW,
         paddingVertical: inputPadH,
         fontSize: FontScreenSize(10),
     },
+
     inputOutline: {
         borderColor: '#000000',
         borderWidth: 2,
@@ -100,11 +100,11 @@ export const styles = StyleSheet.create({
         borderWidth: 2,
         borderRadius: 100,
         minWidth: '100%',
+        alignItems: 'center'
     },
-    iconInputText: {
+    iconInput: {
         color: '#000000',
-        paddingLeft: inputPadH,
-        paddingVertical: inputPadW,
+        paddingLeft: inputPadW,
         fontSize: FontScreenSize(10),
     },
     inputIconText: {

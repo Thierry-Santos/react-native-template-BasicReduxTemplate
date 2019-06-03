@@ -10,6 +10,8 @@ class MenuPage extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.props.allowFontScaling=false;
     }
 
     render() {
